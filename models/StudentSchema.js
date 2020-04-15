@@ -4,7 +4,10 @@ let Schema = mongoose.Schema;
 let StudentSchema = new Schema(
     {
     studentName: String,
-    studentEmail: String
+    studentEmail: String,
+    TeacherName: String,
+    TeacherEmail: String,
+    TeacherSubject: String
 
 }
 );

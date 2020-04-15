@@ -4,11 +4,12 @@ let router = express.Router();
 router.use(express.json());
 
 let StudentCollection = require('../models/StudentSchema')
-let TeacherCollection =require('../models/TeacherSchema')
+
 //sanity
 // router.get('/test', (req, res)=>{
 //     res.send('this is a test')
 // });
+
 // get all request
 router.get('/', (req, res)=>{
     StudentCollection.find({}, (error, result)=>{
@@ -24,7 +25,7 @@ router.get('/:studentEmail', (req, res)=>{
     })
 });
 
-create , student, teacher
+// create , student, teacher
 router.post('/', (req, res)=>{
     // res.send('this is a create test')
 StudentCollection.create(req.body, (error, results)=>{
@@ -32,12 +33,7 @@ StudentCollection.create(req.body, (error, results)=>{
 })
 });
 
-router.post('/', (req, res)=>{
-    // res.send('this is a create test')
-TeacherCollection.create(req.body, (error, results)=>{
-    error ? res.send(error) : res.send(results)
-})
-});
+
 
 
 

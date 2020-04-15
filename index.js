@@ -1,8 +1,12 @@
+//JUST FIGURED OUT....SHOULD HAVE PLACED BOTH TEACHER AND STUDENT NAMES IN THE SCHEMA AND ACCESSED BY PROPERTY. THUS THE CHANGE IN THE STUDENT SCHEMA ACCOUNT. THIS WAY I COULD ACCESS THROUGH ONE (API) PATH.
+
+
+
 //import express, create server and port
 
 let express = require('express');
 let app = express();
-let port = 8600;
+let port = 2112;
 
 // CONNECTING TO A MONGO DATABASE
 // reference the mongoose module 

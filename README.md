@@ -1,5 +1,8 @@
 # Node.js - CRUD backend web service
 
+### You should have ten test cases (even if you don't have ten endpoints talking to the database) and you only have four. You should have two schemas. Also your path names won't work when you have all your endpoints stood up. This is why we test ALL endpoints first. Check your api.js file for a couple more comments
+### Score : 2/5
+
 Create a backend web service for managing Students and Teachers and maintain them in MongoDB
 
 Each Student should have the following properties:

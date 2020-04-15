@@ -18,6 +18,7 @@ router.get('/', (req, res)=>{
 })
 //get student by email
 
+// this should be find one
 router.get('/:studentEmail', (req, res)=>{
     StudentCollection.find({
         studentEmail : req.params.studentEmail}, (error, result)=>{
